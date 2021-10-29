@@ -12,17 +12,15 @@ const App = () =>{
   const [state,setState] = useState(true)
 
   const ToggleScreen = ()=>{
-    setState(false)
+    setState(!state)
   }
-  const goBack = ()=>{
-    setState(true)
-  }
+  
 
   return (
     
     <>
     {
-      (state) ? <Login ToggleScreen={ToggleScreen}/> : <ShoppingCart goBack={goBack} />
+      (state) ? <Login ToggleScreen={ToggleScreen}/> : <ShoppingCart ToggleScreen={ToggleScreen} />
     }
     
     </>

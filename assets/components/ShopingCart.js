@@ -5,7 +5,7 @@ import ListItems from './ListItems';
 import Feather from 'react-native-vector-icons/Feather';
 
 
-const ShoppingCart = () => {
+const ShoppingCart = ({ToggleScreen}) => {
     return (
         <ScrollView style={styles.main_conatiner}>
             <View style={styles.togglecontainer}>
@@ -22,7 +22,7 @@ const ShoppingCart = () => {
         />
         <Feather name="camera" size={27}  color="black" style={styles.camera} />
             </View>
-            <ListItems />
+            <ListItems ToggleScreen={ToggleScreen} />
         </ScrollView>
     )
 }

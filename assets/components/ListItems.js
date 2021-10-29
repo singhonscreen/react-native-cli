@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Image,  TouchableOpacity } from 'react-native';
 // import AppButton from './AppButton';
 import { data } from './listItemsData';
 
-const ListItems = ({goBack}) => {
+const ListItems = ({ToggleScreen}) => {
     return (
         <View style={styles.ListItemsContainer}>
         {
@@ -47,7 +47,7 @@ return(
         </Text>
         </View>
         
-        <TouchableOpacity style={{ height: 35, width:270, backgroundColor: "#DB4700", alignItems: 'center', justifyContent: 'center' ,borderRadius:15,marginTop:10}} onPress={goBack}>
+        <TouchableOpacity style={{ height: 35, width:270, backgroundColor: "#DB4700", alignItems: 'center', justifyContent: 'center' ,borderRadius:15,marginTop:10}} onPress={ToggleScreen}>
         <Text style={{ fontSize: 20, color: "white",  padding:2, fontWeight:"bold",  }} >Proceed to buy 3 items </Text> 
         </TouchableOpacity>
         
